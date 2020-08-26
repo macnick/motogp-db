@@ -4,7 +4,7 @@ const FETCH_FAILURE = 'FETCH_FAILURE';
 
 const initialState = {
   loading: false,
-  books: [],
+  teams: [],
   error: '',
 };
 
@@ -19,13 +19,13 @@ const fetchReducer = (state = initialState, action) => {
       return {
         ...state,
         loading: false,
-        books: action.payload,
+        teams: action.payload.teams,
         error: '',
       };
     case FETCH_FAILURE:
       return {
         loading: false,
-        books: [],
+        teams: [],
         error: action.payload,
       };
     default:
