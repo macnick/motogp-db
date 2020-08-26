@@ -1,6 +1,12 @@
 import axios from 'axios';
-import { baseURL } from './actions';
+import { BASE_URL, ALL_TEAMS, TEAM_INFO } from './actions';
 
 const getTeams = () => {
-  axios.get(baseURL + 'lookup_all_teams.php?id=4407');
+  axios.get(`${BASE_URL}${ALL_TEAMS}`);
 };
+
+const getTeam = (id) => {
+  axios.get(`${BASE_URL}${TEAM_INFO}${id}`);
+};
+
+export { getTeams, getTeam };

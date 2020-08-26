@@ -7,6 +7,7 @@ const GET_TEAM = 'GET_TEAM';
 const TEAM_NOT_FOUND = 'TEAM_NOT_FOUND';
 const BASE_URL = 'https://www.thesportsdb.com/api/v1/json/1/';
 const ALL_TEAMS = 'lookup_all_teams.php?id=4407';
+const TEAM_INFO = 'lookupteam.php?id=';
 
 export {
   FETCH_REQUEST,
@@ -18,4 +19,5 @@ export {
   TEAM_NOT_FOUND,
   BASE_URL,
   ALL_TEAMS,
+  TEAM_INFO,
 };
