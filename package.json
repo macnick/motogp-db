@@ -1,0 +1,33 @@
+{
+  "name": "motogp-db",
+  "version": "1.0.0",
+  "description": "MotoGP championship teams and riders",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macnick/motogp-db.git"
+  },
+  "keywords": [
+    "motogp",
+    "react",
+    "redux"
+  ],
+  "author": "Nick Haralampopoulos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/macnick/motogp-db/issues"
+  },
+  "homepage": "https://github.com/macnick/motogp-db#readme"
+}
