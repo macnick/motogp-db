@@ -8,7 +8,6 @@ const CountryFilter = ({ onFilter }) => {
     'Italy',
     'Japan',
     'Malaysia',
-    'Monaco',
     'Spain',
   ];
 
@@ -18,6 +17,7 @@ const CountryFilter = ({ onFilter }) => {
 
   return (
     <div id="select">
+      Countries{' '}
       <select name="category" id="head-select" onChange={handleFilter}>
         <option value="All" key="All">
           All

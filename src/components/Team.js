@@ -1,12 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import TeamDetails from './TeamDetails';
+import { Link } from 'react-router-dom';
 
-const Team = (team) => (
-  <div className="line">
+const viewDetails = (id) => {
+  alert(id);
+  return <TeamDetails team={id} />;
+};
+
+const Team = ({ team }) => (
+  <div className="line" id={team.idTeam}>
     <div>
-      <div id="idTeam">{team.idTeam}</div>
-      <div id="name">{team.strTeam}</div>
-      <div id="manager">{team.strManager}</div>
+      <div className="name">{team.strTeam}</div>
+      <div className="manager">{team.strManager}</div>
+    </div>
+    <div>
+      <Link to={`/team/${team.idTeam}`}></Link>
+    </div>
+    <div>
+      <button type="button" onClick={() => viewDetails(team.idTeam)}>
+        View Team Details
+      </button>
     </div>
   </div>
 );

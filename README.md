@@ -1,4 +1,4 @@
-# motogp-db
+# MotoGP Database
 
 MotoGP championship teams and riders
 
