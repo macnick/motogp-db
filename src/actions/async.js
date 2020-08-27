@@ -6,6 +6,7 @@ import {
   BASE_URL,
   ALL_TEAMS,
   TEAM_INFO,
+  GET_TEAM_SUCCESS,
 } from './actions';
 
 const fetchRequest = () => ({
@@ -14,6 +15,11 @@ const fetchRequest = () => ({
 
 const fetchSuccess = (data) => ({
   type: FETCH_SUCCESS,
+  payload: data,
+});
+
+const fetchTeamSuccess = (data) => ({
+  type: GET_TEAM_SUCCESS,
   payload: data,
 });
 
@@ -39,7 +45,7 @@ const fetchTeamInfo = (id) => (dispatch) => {
   axios
     .get(`${BASE_URL}${TEAM_INFO}${id}`)
     .then((response) => {
-      dispatch(fetchSuccess(response.data));
+      dispatch(fetchTeamSuccess(response.data));
     })
     .catch((error) => {
       dispatch(fetchFailure(error.message));

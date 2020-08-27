@@ -1,12 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import TeamDetails from './TeamDetails';
 import { Link } from 'react-router-dom';
-
-const viewDetails = (id) => {
-  alert(id);
-  return <TeamDetails team={id} />;
-};
 
 const Team = ({ team }) => (
   <div className="line" id={team.idTeam}>
@@ -16,11 +10,6 @@ const Team = ({ team }) => (
     </div>
     <div>
       <Link to={`/team/${team.idTeam}`}></Link>
-    </div>
-    <div>
-      <button type="button" onClick={() => viewDetails(team.idTeam)}>
-        View Team Details
-      </button>
     </div>
   </div>
 );

@@ -1,10 +1,14 @@
-const FETCH_REQUEST = 'FETCH_REQUEST';
-const FETCH_SUCCESS = 'FETCH_SUCCESS';
-const FETCH_FAILURE = 'FETCH_FAILURE';
+import {
+  FETCH_REQUEST,
+  FETCH_SUCCESS,
+  GET_TEAM_SUCCESS,
+  FETCH_FAILURE,
+} from '../actions/actions';
 
 const initialState = {
   loading: false,
   teams: [],
+  team: {},
   error: '',
 };
 
@@ -20,6 +24,7 @@ const fetchReducer = (state = initialState, action) => {
         ...state,
         loading: false,
         teams: action.payload.teams,
+        team: {},
         error: '',
       };
     case FETCH_FAILURE:
@@ -27,6 +32,13 @@ const fetchReducer = (state = initialState, action) => {
         loading: false,
         teams: [],
         error: action.payload,
+      };
+    case GET_TEAM_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        team: action.payload.teams[0],
+        error: '',
       };
     default:
       return state;
