@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 const TeamDetails = ({ team, fetchTeamInfo }) => {
   let { id } = useParams();
 
-  useEffect(() => fetchTeamInfo(id), [id]);
+  useEffect(() => fetchTeamInfo(id), [fetchTeamInfo, id]);
 
   return (
     <div className="details">
@@ -36,9 +36,9 @@ TeamDetails.propTypes = {
     strTeam: PropTypes.string.isRequired,
     strManager: PropTypes.string.isRequired,
     strCountry: PropTypes.string.isRequired,
-    intFormedYear: PropTypes.string.isRequired,
-    strTeam: PropTypes.string.isRequired,
-    strtrDescriptionEN: PropTypes.string.isRequired,
+    intFormedYear: PropTypes.string,
+    strTeamBadge: PropTypes.string,
+    strtrDescriptionEN: PropTypes.string,
   }),
   fetchTeamInfo: PropTypes.func.isRequired,
 };
