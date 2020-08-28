@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import {
-  BrowserRouter as Router, Switch, Route, Link,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { fetchTeams } from '../actions/async';
 import Team from '../components/Team';
 import Loading from '../components/Loading';
@@ -12,9 +10,7 @@ import CountryFilter from '../components/CountryFilter';
 
 import TeamDetails from '../components/TeamDetails';
 
-const TeamList = ({
-  teams, changeFilter, fetchTeams, filter, loading,
-}) => {
+const TeamList = ({ teams, changeFilter, fetchTeams, filter, loading }) => {
   useEffect(() => {
     fetchTeams();
   }, [fetchTeams]);
@@ -27,11 +23,13 @@ const TeamList = ({
     <Router>
       <Switch>
         <Route exact path="/">
-          <CountryFilter onFilter={filter => changeFilter(filter)} />
+          <CountryFilter onFilter={(filter) => changeFilter(filter)} />
           <div className="container">
             {teams
-              .filter(team => (filter === 'All' ? true : team.strCountry === filter))
-              .map(team => (
+              .filter((team) =>
+                filter === 'All' ? true : team.strCountry === filter
+              )
+              .map((team) => (
                 <Link key={team.idTeam} to={`/team/${team.idTeam}`}>
                   <Team team={team} key={team.idTeam} />
                 </Link>
@@ -46,14 +44,14 @@ const TeamList = ({
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   teams: state.teamsList.teams,
   filter: state.filter,
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   fetchTeams: () => dispatch(fetchTeams()),
-  changeFilter: filter => dispatch(changeFilter(filter)),
+  changeFilter: (filter) => dispatch(changeFilter(filter)),
 });
 
 TeamList.propTypes = {
@@ -63,7 +61,7 @@ TeamList.propTypes = {
       strTeam: PropTypes.string.isRequired,
       strCountry: PropTypes.string.isRequired,
       strTeamBadge: PropTypes.string.isRequired,
-    }),
+    })
   ).isRequired,
   filter: PropTypes.string.isRequired,
   changeFilter: PropTypes.func.isRequired,
