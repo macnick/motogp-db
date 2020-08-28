@@ -1,0 +1,93 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Russo;
+  src: url(../fonts/Russo_One/RussoOne-Regular.ttf);
+}
+
+body {
+  background-color: #ddd;
+  margin: 1% 3%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Russo, Arial, Helvetica, sans-serif;
+  font-size: 1.9em;
+}
+
+.info {
+  color: #000;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+  grid-template-rows: auto;
+  column-gap: 1%;
+  row-gap: 0.6%;
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.line {
+  border: 2px solid #ccc;
+  box-shadow: 3px 3px #888;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+.badge,
+.bike {
+  display: grid;
+}
+
+.badge img,
+.bike img {
+  justify-self: center;
+  width: 70%;
+  height: auto;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2%;
+  margin: 1% 8%;
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.row {
+  border-top: 2px solid #777;
+  padding-top: 3px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.info {
+  font-weight: bold;
+}
+#select {
+  font-family: Russo, Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+#badge {
+  width: 70%;
+  height: auto;
+  align-self: center;
+}
+
+#bike {
+  width: 80%;
+  height: auto;
+  align-self: center;
+}

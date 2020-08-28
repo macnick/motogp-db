@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 
 const Team = ({ team }) => (
   <div className="line" id={team.idTeam}>
-    <div>
-      <div className="name">{team.strTeam}</div>
-      <div className="manager">{team.strManager}</div>
+    <div className="badge">
+      <img src={team.strTeamBadge} alt={team.strTeam + ' team badge'} />
     </div>
   </div>
 );

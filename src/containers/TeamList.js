@@ -23,12 +23,8 @@ const TeamList = ({ teams, changeFilter, fetchTeams, filter, loading }) => {
     <Router>
       <Switch>
         <Route exact path="/">
+          <CountryFilter onFilter={(filter) => changeFilter(filter)} />
           <div className="container">
-            <CountryFilter onFilter={(filter) => changeFilter(filter)} />
-            <div>
-              Number of teams:
-              {teams.length}
-            </div>
             {teams
               .filter((team) =>
                 filter === 'All' ? true : team.strCountry === filter

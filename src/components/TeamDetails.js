@@ -12,13 +12,18 @@ const TeamDetails = ({ team, fetchTeamInfo }) => {
   return (
     <div className="details">
       <div className="badge">
-        <img src={team.strTeamBadge} alt="team badge" />
+        <img src={team.strTeamBadge} alt="team badge" id="badge" />
       </div>
-      <div className="name">{team.strTeam}</div>
-      <div className="manager">{team.strManager}</div>
-      <div className="country">{team.strCountry}</div>
-      <div className="year">{team.intFormedYear}</div>
-      <div className="description">{team.strDescriptionEN}</div>
+      <div className="bike">
+        <img src={team.strTeamJersey} alt="bike" id="bike" />
+      </div>
+      <div className="name info">Team Name: {team.strTeam}</div>
+      <div className="manager info">Manager: {team.strManager}</div>
+      <div className="country info">Home Country: {team.strCountry}</div>
+      <div className="year info">Year Founded: {team.intFormedYear}</div>
+      <div className="row">
+        <div className="description">{team.strDescriptionEN}</div>
+      </div>
     </div>
   );
 };
@@ -38,6 +43,7 @@ TeamDetails.propTypes = {
     strCountry: PropTypes.string.isRequired,
     intFormedYear: PropTypes.string,
     strTeamBadge: PropTypes.string,
+    strTeamJersey: PropTypes.string,
     strtrDescriptionEN: PropTypes.string,
   }),
   fetchTeamInfo: PropTypes.func.isRequired,
