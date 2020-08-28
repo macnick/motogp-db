@@ -44,19 +44,19 @@ A live version is hosted on Netlify.
 ### Home, list of all teams
 
 <p align="center">
-<img src="assets/img/screenshot1.png">
+<img src="src/assets/img/screenshot1.png">
 </p>
 
 ### Team Details
 
 <p align="center">
-<img src="assets/img/screenshot2.png">
+<img src="src/assets/img/screenshot2.png">
 </p>
 
 ### Mobile
 
 <p align="center">
-<img src="assets/img/screenshot3.png">
+<img src="src/assets/img/screenshot3.png">
 </p>
 
 [Up](#Table-of-Contents)
