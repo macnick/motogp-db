@@ -6,7 +6,6 @@ MotoGP championship 2020 info for teams. Catalogue of Statistics. Single Page Ap
 
 ## Table of Contents
 
-- [Objective](#Objective)
 - [Technologies Used](#Technologies-Used)
 - [Live Version](#Live-version)
 - [Install and Run](#How-to-Install-and-Run-in-Your-Computer)
@@ -15,30 +14,25 @@ MotoGP championship 2020 info for teams. Catalogue of Statistics. Single Page Ap
 - [Contributing](#Contributing)
 - [Show your support](#Show-your-support)
 
-### Objective
-
-Magic-books Inc. is a fictional company based in Germany. They have requested our help to build the front-end of an application that will help them organize and manage their bookstore. They want it to be fast, dynamic and responsive to their actions and therefore we decided to build it with React & Redux. See [technologies used](#Technologies-Used) for more info.
-
-[Up](#Table-of-Contents)
-
-### Technologies Used
+## Technologies Used
 
 - Node.js
 - React
 - React-DOM
 - React-Create-App
+- React-Router-Dom
 - Redux
 - npm
 - HTML/CSS
 - ES6
 - ESlint
-- Heroku
+- Netlify
 
 [Up](#Table-of-Contents)
 
 ### Live version
 
-A live version is hosted on Heroku.
+A live version is hosted on Netlify.
 
 - [**Bookstore**](https://react-bookstore-270720.herokuapp.com) @ heroku
 
