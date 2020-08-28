@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Team = ({ team }) => (
   <div className="line" id={team.idTeam}>
     <div className="badge">
-      <img src={team.strTeamBadge} alt={team.strTeam + ' team badge'} />
+      <img src={team.strTeamBadge} alt={`${team.strTeam} team badge`} />
     </div>
   </div>
 );
@@ -13,7 +13,7 @@ Team.propTypes = {
   team: PropTypes.shape({
     idTeam: PropTypes.string.isRequired,
     strTeam: PropTypes.string.isRequired,
-    strManager: PropTypes.string.isRequired,
+    strTeamBadge: PropTypes.string.isRequired,
   }).isRequired,
 };
 

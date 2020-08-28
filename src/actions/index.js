@@ -1,6 +1,6 @@
 import { CHANGE_FILTER } from './actions';
 
-const changeFilter = (country) => ({
+const changeFilter = country => ({
   type: CHANGE_FILTER,
   country,
 });
