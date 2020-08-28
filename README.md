@@ -6,7 +6,6 @@ MotoGP championship 2020 info for teams. Catalogue of Statistics. Single Page Ap
 
 ## Table of Contents
 
-- [Objective](#Objective)
 - [Technologies Used](#Technologies-Used)
 - [Live Version](#Live-version)
 - [Install and Run](#How-to-Install-and-Run-in-Your-Computer)
@@ -15,36 +14,31 @@ MotoGP championship 2020 info for teams. Catalogue of Statistics. Single Page Ap
 - [Contributing](#Contributing)
 - [Show your support](#Show-your-support)
 
-### Objective
-
-Magic-books Inc. is a fictional company based in Germany. They have requested our help to build the front-end of an application that will help them organize and manage their bookstore. They want it to be fast, dynamic and responsive to their actions and therefore we decided to build it with React & Redux. See [technologies used](#Technologies-Used) for more info.
-
-[Up](#Table-of-Contents)
-
-### Technologies Used
+## Technologies Used
 
 - Node.js
 - React
 - React-DOM
 - React-Create-App
+- React-Router-Dom
 - Redux
 - npm
 - HTML/CSS
 - ES6
 - ESlint
-- Heroku
+- Netlify
 
 [Up](#Table-of-Contents)
 
-### Live version
+## Live version
 
-A live version is hosted on Heroku.
+A live version is hosted on Netlify.
 
-- [**Bookstore**](https://react-bookstore-270720.herokuapp.com) @ heroku
+- [**Motogp**](https://motogp-macnick.netlify.app/) @ Netlify
 
 [Up](#Table-of-Contents)
 
-### How to Install and Run in Your Computer
+## How to Install and Run in Your Computer
 
 To run the scripts **npm** is required. To get npm you have to install [Node.js](https://nodejs.org). Follow the installation instructions for your system Mac, Linux or Windows.
 
@@ -71,23 +65,14 @@ Use your terminal and run the commands after each instruction.
 
 [Up](#Table-of-Contents)
 
-## 👤 Author 1
+## 👤 Author
 
-### Nick Haralampopoulos
+## Nick Haralampopoulos
 
 - Github: [@macnick](https://github.com/macnick)
 - Twitter: [@mac_experts](https://twitter.com/mac_experts)
 - Linkedin: [Nick Haralampopoulos](https://www.linkedin.com/in/nick-haralampopoulos/)
 - AngelList: [Nick Haralampopoulos](https://angel.co/u/nick-haralampopoulos)
-
-## 👤 Author 2
-
-### Abdusaid Abdurasulov
-
-- Github: [@Abdusaid10](https://github.com/Abdusaid10)
-- Twitter: [@abdusaid_A](https://twitter.com/abdusaid_a)
-- Linkedin: [Abdusaid Abdurasulov](linkedin.com/in/abdusaid)
-- AngelList: [Abdusaid Abdurasulov](https://angel.co/u/abdusaid-abdurasulov)
 
 ## 🤝 Contributing
 
@@ -133,16 +118,6 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
