@@ -1,15 +1,6 @@
 import * as actions from '../../actions/async';
 import * as types from '../../actions/actions';
 import { changeFilter } from '../../actions/index';
-// import {
-//   FETCH_REQUEST,
-//   FETCH_SUCCESS,
-//   FETCH_FAILURE,
-//   BASE_URL,
-//   ALL_TEAMS,
-//   TEAM_INFO,
-//   GET_TEAM_SUCCESS,
-// } from '../../actions';
 
 describe('Testing filter action', () => {
   it('Should change the filter', () => {
