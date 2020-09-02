@@ -50,15 +50,20 @@ describe('Renders my Redux connected component', () => {
 
     store.dispatch = jest.fn();
 
-    component = renderer.create(
+    // component = renderer.create(
+    //   <Provider store={store}>
+    //     <App />
+    //   </Provider>
+    // );
+  });
+
+  it('should render with given state from Redux store', () => {
+    const { getByText } = render(
       <Provider store={store}>
         <App />
       </Provider>
     );
-  });
-
-  const myComp = it('should render with given state from Redux store', () => {
-    expect(component.toJSON()).toMatchSnapshot();
+    expect(getByText(/MotoGP Team Info/)).toBeInTheDocument();
   });
 
   // it('should render the logo', () => {

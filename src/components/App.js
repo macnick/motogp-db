@@ -3,7 +3,7 @@ import Header from './Header';
 import TeamList from '../containers/TeamList';
 
 const App = () => (
-  <div>
+  <div className="app">
     <Header />
     <TeamList />
   </div>

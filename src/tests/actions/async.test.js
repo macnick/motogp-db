@@ -7,7 +7,7 @@ import {
 } from '../../actions/async';
 import * as types from '../../actions/actions';
 
-describe('Testing fetch request', () => {
+describe('Testing actions', () => {
   const data = {
     teamsList: {
       loading: false,
