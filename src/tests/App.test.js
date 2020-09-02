@@ -6,21 +6,8 @@ import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 import App from '../components/App';
+import Header from '../components/Header';
 import '@testing-library/jest-dom';
-
-import {
-  getByLabelText,
-  getByText,
-  getByTestId,
-  queryByTestId,
-  queryByText,
-  waitFor,
-  getQueriesForElement,
-} from '@testing-library/dom';
-// import Header from '../components/Header';
-// import { element } from 'prop-types';
-// import { changeFilter, CHANGE_FILTER } from '../actions/index';
-// import { handleFilter } from '../components/CountryFilter';
 
 const mockStore = configureStore([]);
 
@@ -50,38 +37,28 @@ describe('Renders my Redux connected component', () => {
 
     store.dispatch = jest.fn();
 
-    // component = renderer.create(
-    //   <Provider store={store}>
-    //     <App />
-    //   </Provider>
-    // );
+    component = renderer.create(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    );
   });
 
-  it('should render with given state from Redux store', () => {
+  it('should render the App', () => {
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render the Header', () => {
+    const { getByText } = render(<Header />);
+    expect(getByText(/MotoGP Team Info/)).toBeInTheDocument();
+  });
+
+  it('should render the selection menu', () => {
     const { getByText } = render(
       <Provider store={store}>
         <App />
       </Provider>
     );
-    expect(getByText(/MotoGP Team Info/)).toBeInTheDocument();
+    expect(getByText(/Select Country/)).toBeInTheDocument();
   });
-
-  // it('should render the logo', () => {
-  //   let element = component.body.getByText(/MotoGP/i);
-  //   expect(element).toHaveTextContent(/MotoGP/i);
-  //   // expect(component.root.querySelector('span').textContent).toBe(
-  //   //   'MotoGP Team Info'
-  //   // );
-  // });
-
-  // it('should dispatch an action on country select', () => {
-  //   renderer.act(() => {
-  //     component.root.findByType('select').props.onChange();
-  //   });
-
-  //   expect(store.dispatch).toHaveBeenCalledTimes(2);
-  //   expect(store.dispatch).toHaveBeenCalledWith(
-  //     changeFilter({ country: 'Italy', type: CHANGE_FILTER })
-  //   );
-  // });
 });
