@@ -27,7 +27,7 @@ describe('Testing fetch request', () => {
     filter: 'All',
   };
 
-  const success = fetchRequest(data);
+  const error = 'Error fetching data.';
 
   it('should initiate a fetch request', () => {
     const expectedAction = {
@@ -37,11 +37,19 @@ describe('Testing fetch request', () => {
     expect(fetchRequest()).toEqual(expectedAction);
   });
 
-  it('should return fetch success', () => {
+  it('should return data after fetch success', () => {
     const expectedAction = {
       type: types.FETCH_SUCCESS,
       payload: data,
     };
     expect(fetchSuccess(data)).toEqual(expectedAction);
+  });
+
+  it('should return an error in case of failure to fetch data', () => {
+    const expectedAction = {
+      type: types.FETCH_FAILURE,
+      payload: error,
+    };
+    expect(fetchFailure(error)).toEqual(expectedAction);
   });
 });
