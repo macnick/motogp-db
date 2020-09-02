@@ -1,11 +1,13 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
+
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 import App from '../components/App';
 import '@testing-library/jest-dom';
-// import { render, fireEvent } from '@testing-library/react';
-// import { render, fireEvent } from '@testing-library/user-event';
+
 import {
   getByLabelText,
   getByText,
@@ -15,6 +17,8 @@ import {
   waitFor,
   getQueriesForElement,
 } from '@testing-library/dom';
+// import Header from '../components/Header';
+// import { element } from 'prop-types';
 // import { changeFilter, CHANGE_FILTER } from '../actions/index';
 // import { handleFilter } from '../components/CountryFilter';
 
@@ -53,16 +57,17 @@ describe('Renders my Redux connected component', () => {
     );
   });
 
-  it('should render with given state from Redux store', () => {
+  const myComp = it('should render with given state from Redux store', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  it('should render the logo', () => {
-    // expect(component.toJSON().match(/MotoGP/)).toBe(true);
-    expect(component.root.querySelector('span').textContent).toBe(
-      'MotoGP Team Info'
-    );
-  });
+  // it('should render the logo', () => {
+  //   let element = component.body.getByText(/MotoGP/i);
+  //   expect(element).toHaveTextContent(/MotoGP/i);
+  //   // expect(component.root.querySelector('span').textContent).toBe(
+  //   //   'MotoGP Team Info'
+  //   // );
+  // });
 
   // it('should dispatch an action on country select', () => {
   //   renderer.act(() => {
