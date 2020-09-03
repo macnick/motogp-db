@@ -41,18 +41,20 @@ const TeamDetails = ({ team, fetchTeamInfo }) => {
         <div className="description">{team.strDescriptionEN}</div>
       </div>
       <div className="row">
-        <button onClick={handleClick}>Back to teams</button>
+        <button onClick={handleClick} type="button">
+          Back to teams
+        </button>
       </div>
     </div>
   );
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   team: state.teamsList.team,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  fetchTeamInfo: (id) => dispatch(fetchTeamInfo(id)),
+const mapDispatchToProps = dispatch => ({
+  fetchTeamInfo: id => dispatch(fetchTeamInfo(id)),
 });
 
 TeamDetails.propTypes = {

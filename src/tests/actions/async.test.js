@@ -1,10 +1,4 @@
-import {
-  fetchRequest,
-  fetchSuccess,
-  fetchFailure,
-  fetchTeams,
-  fetchTeamInfo,
-} from '../../actions/async';
+import { fetchRequest, fetchSuccess, fetchFailure } from '../../actions/async';
 import * as types from '../../actions/actions';
 
 describe('Testing actions', () => {

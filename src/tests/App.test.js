@@ -1,13 +1,12 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { render, screen, cleanup, fireEvent } from '@testing-library/react';
+import { render, cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 import App from '../components/App';
 import Header from '../components/Header';
-import CountryFilter from '../components/CountryFilter';
 import '@testing-library/jest-dom';
 
 const mockStore = configureStore([]);
@@ -41,7 +40,7 @@ describe('Renders my Redux connected component', () => {
     component = renderer.create(
       <Provider store={store}>
         <App />
-      </Provider>
+      </Provider>,
     );
   });
 
@@ -60,7 +59,7 @@ describe('Renders my Redux connected component', () => {
     const { getByText } = render(
       <Provider store={store}>
         <App />
-      </Provider>
+      </Provider>,
     );
     expect(getByText(/Select Country/)).toBeInTheDocument();
   });
@@ -69,7 +68,7 @@ describe('Renders my Redux connected component', () => {
     const { getByTestId, getByRole } = render(
       <Provider store={store}>
         <App />
-      </Provider>
+      </Provider>,
     );
     fireEvent.select(getByRole('combobox'), { target: { value: 'Italy' } });
     expect(getByTestId('head-select')).toHaveValue('Italy');

@@ -20,7 +20,8 @@ const CountryFilter = ({ onFilter }) => {
 
   return (
     <div id="select">
-      Select Country{' '}
+      Select Country
+      {' '}
       <select
         name="category"
         data-testid="head-select"
@@ -30,7 +31,7 @@ const CountryFilter = ({ onFilter }) => {
         <option value="All" key="All">
           All
         </option>
-        {countries.map((cat) => (
+        {countries.map(cat => (
           <option value={cat} key={cat}>
             {cat}
           </option>

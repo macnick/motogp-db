@@ -14,43 +14,45 @@ const fetchRequest = () => ({
   loading: true,
 });
 
-const fetchSuccess = (data) => ({
+const fetchSuccess = data => ({
   type: FETCH_SUCCESS,
   payload: data,
 });
 
-const fetchTeamSuccess = (data) => ({
+const fetchTeamSuccess = data => ({
   type: GET_TEAM_SUCCESS,
   payload: data,
 });
 
-const fetchFailure = (error) => ({
+const fetchFailure = error => ({
   type: FETCH_FAILURE,
   payload: error,
 });
 
-const fetchTeams = () => (dispatch) => {
+const fetchTeams = () => dispatch => {
   dispatch(fetchRequest());
   axios
     .get(`${BASE_URL}${ALL_TEAMS}`)
-    .then((response) => {
+    .then(response => {
       dispatch(fetchSuccess(response.data));
     })
-    .catch((error) => {
+    .catch(error => {
       dispatch(fetchFailure(error.message));
     });
 };
 
-const fetchTeamInfo = (id) => (dispatch) => {
+const fetchTeamInfo = id => dispatch => {
   dispatch(fetchRequest());
   axios
     .get(`${BASE_URL}${TEAM_INFO}${id}`)
-    .then((response) => {
+    .then(response => {
       dispatch(fetchTeamSuccess(response.data));
     })
-    .catch((error) => {
+    .catch(error => {
       dispatch(fetchFailure(error.message));
     });
 };
 
-export { fetchRequest, fetchSuccess, fetchFailure, fetchTeams, fetchTeamInfo };
+export {
+  fetchRequest, fetchSuccess, fetchFailure, fetchTeams, fetchTeamInfo,
+};
