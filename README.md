@@ -90,7 +90,9 @@ Use your terminal and run the commands after each instruction.
 ## Acknowledgements
 
 - [Microverse](https://www.microverse.org) software development school
-- Microverse TSEs will be added after the review
+- [Saheed Oladele](https://github.com/suretrust) code review
+- [Louis Chia](https://github.com/shloch) code review
+- [Sérgio Torres da Silveira Filho](https://github.com/Torres-ssf) code review
 
 [Up](#Table-of-Contents)
 
