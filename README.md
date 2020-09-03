@@ -8,6 +8,7 @@ MotoGP championship 2020 team info. Catalogue of Statistics. Single Page App for
 
 - [Technologies Used](#Technologies-Used)
 - [Live Version](#Live-version)
+- [Video](#Video)
 - [Screenshots](#Screenshots)
 - [Install and Run](#How-to-Install-and-Run-in-Your-Computer)
 - [Acknowledgments](#Acknowledgments)
@@ -36,6 +37,14 @@ MotoGP championship 2020 team info. Catalogue of Statistics. Single Page App for
 A live version is hosted on Netlify.
 
 - [**Motogp**](https://motogp-macnick.netlify.app/) @ Netlify
+
+[Up](#Table-of-Contents)
+
+## Video
+
+Here is a video explanation of the project
+
+- [**Motogp**](https://www.loom.com/share/1d4c318ce48a43bcac3e2f1e5590911f) @ Loom
 
 [Up](#Table-of-Contents)
 
