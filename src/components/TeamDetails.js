@@ -7,6 +7,10 @@ import { fetchTeamInfo } from '../actions/async';
 const TeamDetails = ({ team, fetchTeamInfo }) => {
   const { id } = useParams();
 
+  const handleClick = () => {
+    window.location.href = '/';
+  };
+
   useEffect(() => fetchTeamInfo(id), [fetchTeamInfo, id]);
 
   return (
@@ -35,6 +39,9 @@ const TeamDetails = ({ team, fetchTeamInfo }) => {
       </div>
       <div className="row">
         <div className="description">{team.strDescriptionEN}</div>
+      </div>
+      <div className="row">
+        <button onClick={handleClick}>Back to teams</button>
       </div>
     </div>
   );
