@@ -40,17 +40,17 @@ const TeamDetails = ({ team, fetchTeamInfo }) => {
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   team: state.teamsList.team,
 });
 
-const mapDispatchToProps = dispatch => ({
-  fetchTeamInfo: id => dispatch(fetchTeamInfo(id)),
+const mapDispatchToProps = (dispatch) => ({
+  fetchTeamInfo: (id) => dispatch(fetchTeamInfo(id)),
 });
 
 TeamDetails.propTypes = {
   team: PropTypes.shape({
-    strTeam: PropTypes.string.isRequired,
+    strTeam: PropTypes.string,
     strManager: PropTypes.string.isRequired,
     strCountry: PropTypes.string.isRequired,
     intFormedYear: PropTypes.string,

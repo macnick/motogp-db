@@ -33,9 +33,10 @@ exports[`Renders my Redux connected component should render the App 1`] = `
     Select Country
      
     <select
-      id="head-select"
+      data-testid="head-select"
       name="category"
       onChange={[Function]}
+      value="All"
     >
       <option
         value="All"

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useStore } from 'react-redux';
 import PropTypes from 'prop-types';
 
 const CountryFilter = ({ onFilter }) => {
@@ -15,10 +16,17 @@ const CountryFilter = ({ onFilter }) => {
     onFilter(target.value);
   };
 
+  const store = useStore().getState();
+
   return (
     <div id="select">
       Select Country{' '}
-      <select name="category" id="head-select" onChange={handleFilter}>
+      <select
+        name="category"
+        data-testid="head-select"
+        onChange={handleFilter}
+        value={store.filter}
+      >
         <option value="All" key="All">
           All
         </option>
