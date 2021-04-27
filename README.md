@@ -119,7 +119,7 @@ Feel free to check the [issues page](https://github.com/macnick/motogp-db/issues
 
 ## Show your support
 
-Give a ⭐️ if you enjoyed this project!
+Spare a ⭐️ if you enjoyed this project!
 
 ## 📝 License
 
