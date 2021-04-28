@@ -42,7 +42,7 @@ A live version is hosted on Netlify.
 
 ## Video
 
-Here is a video explanation of the project
+Here is a video explanation of the project.
 
 - [**Motogp**](https://www.loom.com/share/1d4c318ce48a43bcac3e2f1e5590911f) @ Loom
 
