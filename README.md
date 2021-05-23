@@ -2,7 +2,7 @@
 
 # MotoGP Database
 
-2020 MotoGP championship team info. Catalogue of Statistics. Single Page App for MotoGP fans. Fast, dynamic and responsive build with React & Redux. Data from the [thesportsdb API](https://www.thesportsdb.com/).
+2020 MotoGP championship team info. Catalogue of Statistics. Single Page App for MotoGP fans. Users can see all the teams or select teams by country. Fast, dynamic and responsive build with React & Redux. Data from the [thesportsdb API](https://www.thesportsdb.com/).
 
 ## Table of Contents
 
