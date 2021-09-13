@@ -96,7 +96,7 @@ Use your terminal and run the commands after each instruction.
 
 [Up](#Table-of-Contents)
 
-## 👤 Author
+## Author 👤
 
 ## Nick Haralampopoulos
 
@@ -105,7 +105,7 @@ Use your terminal and run the commands after each instruction.
 - Linkedin: [Nick Haralampopoulos](https://www.linkedin.com/in/nick-haralampopoulos/)
 - AngelList: [Nick Haralampopoulos](https://angel.co/u/nick-haralampopoulos)
 
-## 🤝 Contributing
+## Contributing 🤝 
 
 Contributions, issues and feature requests are welcome!
 
