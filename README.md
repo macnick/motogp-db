@@ -105,6 +105,8 @@ Use your terminal and run the commands after each instruction.
 - Linkedin: [Nick Haralampopoulos](https://www.linkedin.com/in/nick-haralampopoulos/)
 - AngelList: [Nick Haralampopoulos](https://angel.co/u/nick-haralampopoulos)
 
+[Up](#Table-of-Contents)
+
 ## Contributing
 
 Contributions, issues and feature requests are welcome!
@@ -116,6 +118,8 @@ Feel free to check the [issues page](https://github.com/macnick/motogp-db/issues
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
 5. Create a new Pull Request
+
+[Up](#Table-of-Contents)
 
 ## Show your support
 
