@@ -87,7 +87,7 @@ Use your terminal and run the commands after each instruction.
 
 [Up](#Table-of-Contents)
 
-## Acknowledgements
+## Acknowledgments
 
 - [Microverse](https://www.microverse.org) software development school
 - [Saheed Oladele](https://github.com/suretrust) code review
